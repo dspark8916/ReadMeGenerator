@@ -2,27 +2,9 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
-
-
-// // function to generate markdown for README
-// function generateMarkdown(data) {
-//     return `# ${data.title}
-//     ## ${data.description}
-//     ## ${data.tableofcontents}
-//     ## ${data.installation}
-//     ## ${data.usage}
-//     ## ${data.license}
-//     ### ${data.contributing}
-//     ### ${data.tests}
-//     ### ${data.questionss}
-//     `;
-//   }
-  
-//   module.exports = generateMarkdown;
-
-  // array of questions for user
+// array of questions for user
 const questions = () => {
     inquirer.prompt([
         {
@@ -90,20 +72,43 @@ const questions = () => {
             name: 'e-mail'
         }
     ])
-    .then(function (response) {
-        console.log(response);
+    .then(function (data) {
+        console.log(data);
     })
 }
 
 questions();
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
 
-// // function to initialize program
-// function init() {
+// function to write README file
+function writeToFile(fileName, data) {
+    let readMe = generateMarkdown(data);
 
-// }
+    writeFileAsync(fileName, readMe).then(
+        err => console.log("Success!")
+    );
+}
 
-// // function call to initialize program
-// init();
+// function to initialize program
+function init() {
+
+}
+
+// function call to initialize program
+init();
+
+// function to generate markdown for README
+
+function generateMarkdown(data) {
+    return `# ${data.title}
+    ## ${data.description}
+    ## ${data.tableofcontents}
+    ## ${data.installation}
+    ## ${data.usage}
+    ## ${data.license}
+    ### ${data.contributing}
+    ### ${data.tests}
+    ### ${data.questionss}
+    `;
+  }
+  
+  module.exports = generateMarkdown;
