@@ -35,7 +35,7 @@ const questions = [
         name: 'description'
     },
     {
-        type: 'choices',
+        type: 'checkbox',
         message: 'Please select the sections you would like to include in your Table of Contents:',
         choices: [
             "Installaion",
@@ -48,9 +48,46 @@ const questions = [
         name: 'tableofcontents'
     },
     {
-        
+       type: 'input',
+       message: 'What are the installation instructions for your project?',
+       name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'What is the usage information for your project?',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'What are the contributing guidelines for your project?',
+        name: 'contributing'
+    },
+    {
+        type: 'input',
+        messages: 'What are the test instructions for your project?',
+        name: 'test'
+    },
+    {
+        type: 'list',
+        message: 'Please choose your license from the following options:',
+        choices: [
+            "MIT",
+            "Apache",
+            "BSD",
+            "GPL"
+        ],
+        name: 'license'
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'username'
+    },
+    {
+        type: 'input',
+        message: 'What is your e-mail?',
+        name: 'e-mail'
     }
-
 ];
 
 // function to write README file
