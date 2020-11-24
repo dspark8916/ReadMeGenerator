@@ -56,7 +56,7 @@ const questions = () => {
         {
             type: 'input',
             message: 'What is your e-mail?',
-            name: 'e-mail'
+            name: 'email'
         }
     ])
     .then(function (data) {
@@ -107,7 +107,7 @@ ${data.contributing}
 ${data.tests}
 
 ### Questions 
-If you have additional questions and would like to reach out to me please feel free to do so at the following email: ${data.e-mail}. Thank you.
+If you have additional questions and would like to reach out to me please feel free to do so at the following email: ${data.email}. Thank you.
 
 Check Out My Github Page Below:
 [Github](https://github.com/${data.username})
@@ -116,3 +116,13 @@ Check Out My Github Page Below:
 }
   
 questions();
+
+// title: 'Professional ReadMe Generator',
+// description: 'The purpose of this project is to create a command line application that accepts user input to then generate a professional ReadMe file.',
+// installation: "For this project you run to run 'npm i' to install a package.json file and 'npm i inquirer' to install the inquirer package.",
+// usage: "Run 'node .\\index.js' to receieve prompts to enter data that will be filled in to the ReadMe.",
+// contributing: 'Anyone that would like to contribute is able to do so.',
+// test: "To run a test for this application you can just run the 'npm run test' command in your terminal.",
+// license: 'MIT',
+// username: 'dspark8916',
+// 'e-mail': 'dmicevski89@yahoo.com'
