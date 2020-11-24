@@ -18,9 +18,9 @@ const questions = () => {
             name: 'description'
         },
         {
-        type: 'input',
-        message: 'What are the installation instructions for your project?',
-        name: 'installation'
+            type: 'input',
+            message: 'What are the installation instructions for your project?',
+            name: 'installation'
         },
         {
             type: 'input',
@@ -69,10 +69,14 @@ const questions = () => {
 }
 
 function generateMarkdown(data) {
+    
     let readmeGen = 
+
 `# ${data.title}
+
 ## Description
 ${data.description}
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -103,7 +107,10 @@ ${data.contributing}
 ${data.tests}
 
 ### Questions 
-${data.questionss}
+If you have additional questions and would like to reach out to me please feel free to do so at the following email: ${data.e-mail}. Thank you.
+
+Check Out My Github Page Below:
+[Github](https://github.com/${data.username})
     `;
     return(readmeGen);
 }
