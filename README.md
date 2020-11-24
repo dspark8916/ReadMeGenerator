@@ -1,49 +1,56 @@
-# ReadMeGenerator
-
-## Importance of Good ReadMe
-
-An important component of your GitHub profile and one that many new developers often overlook is the README.md file. The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one.
+# Professional ReadMe Generator
 
 ## Description
+An important component of your GitHub profile and one that many new developers often overlook is the README.md file. The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub. There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one.
 
-Now that we now how important it is to have a good ReadMe, we can go in to what our task was for this assignment. We were asked to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## User Story
 
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+AS A developer I WANT a README generator SO THAT I can quickly create a professional README for a new project
 
-## Tasks Completed
+## Table of Contents
 
-**List of Tasks Completed**
+* [Installation](#installation)
 
-    1.
+* [Usage](#usage)
 
-    2.
+* [License](#license)
 
-    3.
+* [Contributing](#contributing)
 
-    4.
+* [Tests](#tests)
 
-    5.
+* [Questions](#questions)
 
-    6.
+## Installation
+In order to be able to run this app please first type 'npm i' into the command line of your terminal followed by 'npm i inquirer' to instal the inquirer package.
 
-    7.
+## Usage
+The intended use of this app is to allow the user to create a professional README after answering a series of prompts.
 
-    8.
+## License 
+This application is covered under the following license: [MIT](https://choosealicense.com/licenses/).
 
-    9.
+### Contributing
+If you are interested in contributing to this app please contact the owner of this repo via email.
 
-## Video Demonstration & ScreenShot
+### Tests
+In order to test this app you can clone the GitHub repo and then run the installation instructions.
 
-**Link to Video Demonstration**
+### Link to Video Demo & ScreenShot of Prompts
 
-[Video Demo](https://drive.google.com/file/d/1ICSPyYdwiPD3zHP7JDUAwarON7bHnyub/view)
+**Link to Video Demo**
 
-**ScreenShot**
+[Video Demo](https://drive.google.com/file/d/1mS0zlaRm00fnRqm7-CCTfo_YKHksifFn/view)
+
+**ScreenShot of Prompts**
 
 ![ScreenShot of Prompts](assets/images/PromptScreenShot.png)
+
+### Questions 
+If you have any questions regarding this project and would like to reach out to me please feel free to do so at the following email: dimitarm01@gmail.com. Thank you.
+
+Check Out My Github Page:
+[Github](https://github.com/dspark8916)
+    
