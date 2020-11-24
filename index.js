@@ -87,10 +87,10 @@ ${data.description}
 
 * [Questions](#questions)
 
-## Installation Instructions
+## Installation
 ${data.installation}
 
-## Usage Information
+## Usage
 ${data.usage}
 
 ## License 
