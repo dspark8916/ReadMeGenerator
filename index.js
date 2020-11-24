@@ -100,7 +100,7 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-This application is covered under the following license: [License](https://choosealicense.com/licenses/${data.license}).
+This application is covered under the following license: [${data.license}](https://choosealicense.com/licenses/).
 
 ### Contributing
 ${data.contributing}
