@@ -18,19 +18,6 @@ const questions = () => {
             name: 'description'
         },
         {
-            type: 'checkbox',
-            message: 'Please select the sections you would like to include in your Table of Contents:',
-            choices: [
-                "Installaion",
-                "Usage",
-                "License",
-                "Contributing",
-                "Tests",
-                "Questions"
-            ],
-            name: 'tableofcontents'
-        },
-        {
         type: 'input',
         message: 'What are the installation instructions for your project?',
         name: 'installation'
@@ -74,41 +61,51 @@ const questions = () => {
     ])
     .then(function (data) {
         console.log(data);
+        let README = generateMarkdown(data);
+        writeFileAsync("README.md", README).then(
+            err => console.log("Successfully wrote to file README.")
+        );
     })
 }
 
-questions();
-
-// function to write README file
-function writeToFile(fileName, data) {
-    let readMe = generateMarkdown(data);
-
-    writeFileAsync(fileName, readMe).then(
-        err => console.log("Success!")
-    );
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
-
-// function to generate markdown for README
-
 function generateMarkdown(data) {
-    return `# ${data.title}
-    ## ${data.description}
-    ## ${data.tableofcontents}
-    ## ${data.installation}
-    ## ${data.usage}
-    ## ${data.license}
-    ### ${data.contributing}
-    ### ${data.tests}
-    ### ${data.questionss}
+    let readmeGen = 
+`# ${data.title}
+## Description
+${data.description}
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation Instructions
+${data.installation}
+
+## Usage Information
+${data.usage}
+
+## License 
+${data.license}
+
+### Contributing
+${data.contributing}
+
+### Tests
+${data.tests}
+
+### Questions 
+${data.questionss}
     `;
-  }
+    return(readmeGen);
+}
   
-  module.exports = generateMarkdown;
+questions();
