@@ -29,7 +29,9 @@ Make sure repo includes a package.json with required dependencies by running 'np
 ## Usage
 To be able to quickly create a professional README for a new project.
 
-![ScreenShot]()
+Example of prompts:
+
+![ScreenShot](assets/images/PromptScreenShot.png)
 
 ## License 
 This application is covered under the following license: [MIT](https://choosealicense.com/licenses/).
