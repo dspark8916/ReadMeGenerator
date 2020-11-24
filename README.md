@@ -1,7 +1,8 @@
 # Professional ReadMe Generator
 
 ## Description
-The purpose of this project is to create a command line application that accepts user input to then generate a professional ReadMe file.
+Create a command-line application that dynamically generates a professional README.md file from a user's input using the inquirer package.
+![License](https://img.shields.io/badge/-MIT License-brightgreen/)
 
 ## Table of Contents
 
@@ -18,23 +19,23 @@ The purpose of this project is to create a command line application that accepts
 * [Questions](#questions)
 
 ## Installation
-For this project you run to run 'npm i' to install a package.json file and 'npm i inquirer' to install the inquirer package.
+Make sure repo includes a package.json with required dependencies by running 'npm init' and also make sure to run 'npm i inquirer' to install the inquirer package so that it runs properly.
 
 ## Usage
-Run 'node .\\index.js' to receieve prompts to enter data that will be filled in to the ReadMe.
+To be able to quickly create a professional README for a new project.
 
 ## License 
-MIT
+This application is covered under the following license: MIT License.
 
 ### Contributing
-Anyone that would like to contribute is able to do so.
+When contributing to this repository, before making a change please first discuss the change you wish to make via email with the owners of this repository. Thank you.
 
 ### Tests
-undefined
+You can test this application by running 'npm run test' command in the terminal.
 
 ### Questions 
-If you have additional questions and would like to reach out to me please feel free to do so at the following email: dmicevski89@yahoo.com. Thank you.
+If you have additional questions and would like to reach out to me please feel free to do so at the following email: dimitarm01@gmail.com. Thank you.
 
-Check Out My Github Page:
+Check Out My Github Page Below:
 [Github](https://github.com/dspark8916)
     
