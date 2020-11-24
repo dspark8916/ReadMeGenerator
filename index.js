@@ -41,10 +41,10 @@ const questions = () => {
             type: 'checkbox',
             message: 'Please choose your license from the following options:',
             choices: [
-                "MIT License",
-                "Apache 2.0",
-                "GPL",
-                "Mozilla Public License 2.0"
+                "MIT",
+                "Apache-2.0",
+                "GPL-3.0",
+                "MPL-2.0"
             ],
             name: 'license'
         },
@@ -76,7 +76,8 @@ function generateMarkdown(data) {
 
 ## Description
 ${data.description}
-![License](https://img.shields.io/badge/-${data.license}-brightgreen/)
+
+![License](https://img.shields.io/badge/license-${data.license}-blue)
 
 ## Table of Contents
 
@@ -99,7 +100,7 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-This application is covered under the following license: ${data.license}.
+This application is covered under the following license: [License](https://choosealicense.com/licenses/${data.license}).
 
 ### Contributing
 ${data.contributing}
@@ -117,13 +118,3 @@ Check Out My Github Page Below:
 }
   
 questions();
-
-// title: 'Professional ReadMe Generator',  
-// description: "Create a command-line application that dynamically generates a professional README.md file from a user's input using the inquirer package.",
-// installation: "Make sure repo includes a package.json with required dependencies by running 'npm init' and also make sure to run 'npm i inquirer' to install the inquirer package so that it runs properly.",
-// usage: 'To be able to quickly create a professional README for a new project.',
-// contributing: 'When contributing to this repository, before making a change please first discuss the change you wish to make via email with the owners of this repository. Thank you.',
-// tests: "You can test this application by running 'npm run test' command in the terminal.",
-// license: [ 'MIT License' ],
-// username: 'dspark8916',
-// email: 'dimitarm01@gmail.com'
