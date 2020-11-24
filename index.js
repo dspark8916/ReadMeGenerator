@@ -19,6 +19,11 @@ const questions = () => {
         },
         {
             type: 'input',
+            message: 'Please provide a quick user story:',
+            name: 'user'
+        },
+        {
+            type: 'input',
             message: 'What are the installation instructions for your project?',
             name: 'installation'
         },
@@ -79,6 +84,10 @@ ${data.description}
 
 ![License](https://img.shields.io/badge/license-${data.license}-blue)
 
+## User Story
+
+${data.user}
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -109,9 +118,9 @@ ${data.contributing}
 ${data.tests}
 
 ### Questions 
-If you have additional questions and would like to reach out to me please feel free to do so at the following email: ${data.email}. Thank you.
+If you have any questions regarding this project and would like to reach out to me please feel free to do so at the following email: ${data.email}. Thank you.
 
-Check Out My Github Page Below:
+Check Out My Github Page:
 [Github](https://github.com/${data.username})
     `;
     return(readmeGen);
