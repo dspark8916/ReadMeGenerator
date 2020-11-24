@@ -35,16 +35,16 @@ const questions = () => {
         {
             type: 'input',
             message: 'What are the test instructions for your project?',
-            name: 'test'
+            name: 'tests'
         },
         {
-            type: 'list',
+            type: 'checkbox',
             message: 'Please choose your license from the following options:',
             choices: [
-                "MIT",
-                "Apache",
-                "BSD",
-                "GPL"
+                "MIT License",
+                "Apache 2.0",
+                "GPL",
+                "Mozilla Public License 2.0"
             ],
             name: 'license'
         },
@@ -76,6 +76,7 @@ function generateMarkdown(data) {
 
 ## Description
 ${data.description}
+![License](https://img.shields.io/badge/-${response.license}-brightgreen/)
 
 ## Table of Contents
 
@@ -98,7 +99,7 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-${data.license}
+This application is covered under the following license: ${data.license}.
 
 ### Contributing
 ${data.contributing}
@@ -116,13 +117,3 @@ Check Out My Github Page Below:
 }
   
 questions();
-
-// title: 'Professional ReadMe Generator',
-// description: 'The purpose of this project is to create a command line application that accepts user input to then generate a professional ReadMe file.',
-// installation: "For this project you run to run 'npm i' to install a package.json file and 'npm i inquirer' to install the inquirer package.",
-// usage: "Run 'node .\\index.js' to receieve prompts to enter data that will be filled in to the ReadMe.",
-// contributing: 'Anyone that would like to contribute is able to do so.',
-// test: "To run a test for this application you can just run the 'npm run test' command in your terminal.",
-// license: 'MIT',
-// username: 'dspark8916',
-// 'e-mail': 'dmicevski89@yahoo.com'

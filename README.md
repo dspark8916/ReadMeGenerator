@@ -35,6 +35,6 @@ undefined
 ### Questions 
 If you have additional questions and would like to reach out to me please feel free to do so at the following email: dmicevski89@yahoo.com. Thank you.
 
-Check Out My Github Page Below:
+Check Out My Github Page:
 [Github](https://github.com/dspark8916)
     
