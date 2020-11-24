@@ -38,7 +38,7 @@ const questions = () => {
             name: 'tests'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'Please choose your license from the following options:',
             choices: [
                 "MIT",
